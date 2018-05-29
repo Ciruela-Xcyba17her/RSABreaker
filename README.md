@@ -1,8 +1,6 @@
 # RSABreaker
-Break RSA encryption from many ways!<br>
-<br>
-Now, these ways below are available.
+Pythonの練習で作ったRSA復号・攻撃プログラム群です。<br>
 <ul>
-  <li>Decryption from RSA Definition</li>
-  <li>Wiener's attack (Not completed.)</li>
+  <li>RSAdecrypter.py: 定義からRSAの復号を行います。</li>
+  <li>Wieners_attack.py: Wiener's Attackにより秘密鍵を解読します(未完成)。</li>
 </ul>
