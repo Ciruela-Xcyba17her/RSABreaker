@@ -18,6 +18,7 @@ def set_values():
 def fix_den(m, num, den):
     return m * den + num, den
 
+#連分数を単純な分数num/denに直す
 def convert_to_a_fraction(cf):
     index = len(cf) - 1
     num = cf[index - 1]
@@ -87,7 +88,6 @@ def main():
         cf.append(k//d)
         
         num, den = convert_to_a_fraction(cf)
-        #print(str(num)+"/"+str(den))
 
         #ファイNは整数であるか
         if (e * den - 1)%num==0:
@@ -96,7 +96,6 @@ def main():
             b=n-phaiN+1
             c=n
 
-            #print("x^2+("+str(b)+")x+("+str(c)+")")
             rt2=pow(b, 2)-4*c
             rt=calcSquare(rt2)
             
